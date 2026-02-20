@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Axiom Canine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: {
+                            DEFAULT: '#0B0C10',
+                            dark: '#050505',
+                            light: '#1F2833'
+                        },
+                        ranger: {
+                            DEFAULT: '#7A8B66',
+                            dark: '#4A5D23'
+                        },
+                        forge: {
+                            DEFAULT: '#FF5E00',
+                            dark: '#CC4B00'
+                        },
+                        steel: '#C5C6C7'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0B0C10; }
+        .btn-forge {
+            background-color: #FF5E00;
+            border-color: #FF5E00;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+        .btn-forge:hover {
+            background-color: #CC4B00;
+            border-color: #CC4B00;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen text-center px-4">
+    <div class="max-w-2xl">
+        <svg class="w-24 h-24 mx-auto mb-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <h1 class="text-5xl font-bold text-white mb-6" style="font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.1em;">Thank You!</h1>
+        <p class="text-xl mb-8" style="color: #C5C6C7; line-height: 1.6;">
+            Your information has been received successfully.<br/>
+            We'll be reaching out to you within 24 hours.
+        </p>
+        <a href="/Main" class="btn-forge inline-block text-white font-bold uppercase tracking-widest px-10 py-4 border-2" style="font-family: 'Oswald', sans-serif;">
+            Return to Home
+        </a>
+    </div>
+</body>
+</html>
