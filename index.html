@@ -48,7 +48,7 @@
                         obsidian: {
                             DEFAULT: '#0B0C10',
                             dark: '#050505',
-                            light: '#1F2833'
+                            light: '#1A2030'
                         },
                         ranger: {
                             DEFAULT: '#7A8B66',
@@ -58,7 +58,15 @@
                             DEFAULT: '#FF5E00',
                             dark: '#CC4B00'
                         },
-                        steel: '#C5C6C7'
+                        steel: '#C5C6C7',
+                        trust: {
+                            DEFAULT: '#5B8FA8',
+                            dark: '#3D6B82'
+                        },
+                        warm: {
+                            DEFAULT: '#E8D5B7',
+                            dark: '#C9B48A'
+                        }
                     },
                     backgroundImage: {
                         'texture': "url('data:image/svg+xml,%3Csvg width=\\'60\\' height=\\'60\\' viewBox=\\'0 0 60 60\\' xmlns=\\'http://www.w3.org/2000/svg\\'%3E%3Cg fill=\\'none\\' fill-rule=\\'evenodd\\'%3E%3Cg fill=\\'%237A8B66\\' fill-opacity=\\'0.03\\'%3E%3Cpath d=\\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')"
@@ -163,7 +171,7 @@
       "name": "Axiom Canine",
       "description": "Expert dog training in Jacksonville, FL — reactivity, aggression & obedience | Axiom Canine",
       "url": "https://axiom-canine.netlify.app",
-      "telephone": "",
+      "telephone": "(904) 458-7561",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Jacksonville",
@@ -175,10 +183,14 @@
         "latitude": 30.3322,
         "longitude": -81.6557
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Jacksonville"
-      },
+      "areaServed": [
+        {"@type": "City", "name": "Jacksonville"},
+        {"@type": "City", "name": "Ponte Vedra"},
+        {"@type": "City", "name": "Nocatee"},
+        {"@type": "City", "name": "St. Augustine"},
+        {"@type": "City", "name": "Nassau County"},
+        {"@type": "City", "name": "Fernandina Beach"}
+      ],
       "serviceType": ["Dog Training", "Leash Reactivity", "Aggression Training", "Obedience Training"],
       "priceRange": "$$",
       "image": "https://axiom-canine.netlify.app/og-image.jpg",
@@ -201,8 +213,12 @@
             <a href="#home" data-route="home" class="nav-link text-sm font-bold uppercase tracking-widest text-forge border-b-2 border-forge pb-1 transition-colors">Home</a>
             <a href="#behavior" data-route="behavior" class="nav-link text-sm font-bold uppercase tracking-widest text-steel hover:text-forge border-b-2 border-transparent hover:border-forge pb-1 transition-colors">Behavior Mod</a>
             <a href="#obedience" data-route="obedience" class="nav-link text-sm font-bold uppercase tracking-widest text-steel hover:text-forge border-b-2 border-transparent hover:border-forge pb-1 transition-colors">Obedience</a>
+            <a href="#community" data-route="community" data-active-color="trust" class="nav-link text-sm font-bold uppercase tracking-widest text-steel hover:text-trust border-b-2 border-transparent hover:border-trust pb-1 transition-colors">Axiom Cares</a>
             
             <!-- Persistent CTA Button -->
+            <a href="tel:9044587561" class="ml-2 text-sm font-bold uppercase tracking-widest text-forge border border-forge px-5 py-2 hover:bg-forge hover:text-obsidian-dark transition-colors flex items-center gap-2">
+                <i data-lucide="phone" class="w-4 h-4"></i> (904) 458-7561
+            </a>
             <a href="#" data-open-modal class="ml-6 text-sm font-bold uppercase tracking-widest text-obsidian-dark bg-forge px-5 py-2 hover:bg-orange-500 transition-colors border border-forge shadow-[0_0_15px_rgba(255,94,0,0.2)]">Get Assessed</a>
         </nav>
 
@@ -216,6 +232,10 @@
         <a href="#home" data-route="home" class="mobile-nav-link block p-5 text-center font-oswald text-xl uppercase tracking-widest border-b border-obsidian-dark text-forge bg-obsidian-light border-l-4 border-l-forge transition-colors">Home</a>
         <a href="#behavior" data-route="behavior" class="mobile-nav-link block p-5 text-center font-oswald text-xl uppercase tracking-widest border-b border-obsidian-dark text-steel hover:text-forge border-l-4 border-l-transparent transition-colors">Behavior Mod</a>
         <a href="#obedience" data-route="obedience" class="mobile-nav-link block p-5 text-center font-oswald text-xl uppercase tracking-widest border-b border-obsidian-dark text-steel hover:text-forge border-l-4 border-l-transparent transition-colors">Obedience</a>
+        <a href="#community" data-route="community" data-active-color="trust" class="mobile-nav-link block p-5 text-center font-oswald text-xl uppercase tracking-widest border-b border-obsidian-dark text-steel hover:text-trust border-l-4 border-l-transparent transition-colors">Axiom Cares</a>
+        <a href="tel:9044587561" class="p-5 text-center font-oswald text-xl uppercase tracking-widest border-b border-obsidian-dark text-forge border-l-4 border-l-transparent hover:border-l-forge transition-colors flex items-center justify-center gap-3">
+            <i data-lucide="phone" class="w-5 h-5"></i> (904) 458-7561
+        </a>
         <a href="#" data-open-modal class="block p-5 text-center font-oswald text-xl uppercase tracking-widest text-obsidian-dark bg-forge">Free Assessment</a>
     </div>
 </header>
@@ -569,6 +589,117 @@
         </section>
     </div>
 
+    <!-- ==========================================
+         PAGE 4: COMMUNITY (AXIOM CARES)
+         ========================================== -->
+    <div id="page-community" class="page-view hidden">
+        <!-- Hero -->
+        <section class="relative min-h-[70vh] flex items-center justify-center pt-20 clip-slant pb-24 overflow-hidden bg-gradient-to-br from-trust/10 via-obsidian-dark to-obsidian-dark">
+            <div class="absolute inset-0 bg-texture opacity-30 pointer-events-none z-0"></div>
+            <div class="max-w-5xl mx-auto px-4 relative z-10 text-center">
+                <h1 class="font-oswald text-5xl md:text-7xl font-bold uppercase tracking-tight leading-[1] mb-6 text-white drop-shadow-2xl">
+                    No Dog Should Lose <span class="text-trust">Their Home.</span>
+                </h1>
+                <p class="text-lg md:text-xl font-light max-w-2xl mx-auto text-steel leading-relaxed">
+                    Some problems just need the right guidance. Axiom Cares exists for the owners who need help the most — no judgment, no pressure, no bill.
+                </p>
+            </div>
+        </section>
+
+        <!-- Two Program Cards -->
+        <section class="py-24 bg-obsidian border-b border-obsidian-light relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <h2 class="font-oswald text-4xl font-bold uppercase tracking-widest text-warm mb-6">The Axiom Cares Program</h2>
+                    <p class="text-steel text-lg leading-relaxed">
+                        We believe every dog deserves a chance and every owner deserves support. These programs exist because the alternative — a dog losing their home — is never acceptable if it can be avoided.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Rescue Ready -->
+                    <div class="bg-obsidian-light p-10 border-t-4 border-trust shadow-lg">
+                        <i data-lucide="heart" class="w-12 h-12 text-trust mb-6"></i>
+                        <h3 class="font-oswald text-2xl uppercase tracking-widest text-white mb-4">Rescue Ready</h3>
+                        <p class="text-steel leading-relaxed mb-6">
+                            Bringing a rescue home is one of the most rewarding things you can do — and one of the most overwhelming. If you're adopting or have recently rescued a dog, we'll come to you. Free. No strings attached.
+                        </p>
+                        <p class="text-warm text-sm font-bold uppercase tracking-widest">Free In-Home Visit · Jacksonville & Surrounding Areas</p>
+                    </div>
+                    <!-- Surrender Prevention -->
+                    <div class="bg-obsidian-light p-10 border-t-4 border-forge shadow-lg">
+                        <i data-lucide="shield" class="w-12 h-12 text-forge mb-6"></i>
+                        <h3 class="font-oswald text-2xl uppercase tracking-widest text-white mb-4">Before You Let Go</h3>
+                        <p class="text-steel leading-relaxed mb-6">
+                            If you're at the point of considering rehoming or surrendering your dog, reach out before you make that call. We'll come to you, assess what's happening, and give you a real, honest plan — at our expense. Online, FaceTime, or in person.
+                        </p>
+                        <p class="text-warm text-sm font-bold uppercase tracking-widest">Free Assessment · All Options On The Table</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Area -->
+        <section class="py-24 bg-obsidian-dark relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <i data-lucide="map-pin" class="w-16 h-16 text-trust mx-auto mb-6"></i>
+                    <h2 class="font-oswald text-4xl font-bold uppercase tracking-widest text-warm mb-6">Where We Serve</h2>
+                    <p class="text-steel text-lg leading-relaxed">
+                        Axiom Canine covers a 60+ mile corridor across Northeast Florida. If you're in any of these areas, we can come to you.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+                    <div class="bg-obsidian p-6 border border-obsidian-light text-center">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-trust mx-auto mb-2"></i>
+                        <p class="font-oswald uppercase tracking-widest text-white text-sm">Jacksonville</p>
+                        <p class="text-steel/50 text-xs mt-1">Core Service Area</p>
+                    </div>
+                    <div class="bg-obsidian p-6 border border-obsidian-light text-center">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-trust mx-auto mb-2"></i>
+                        <p class="font-oswald uppercase tracking-widest text-white text-sm">Ponte Vedra</p>
+                        <p class="text-steel/50 text-xs mt-1">~30 min south</p>
+                    </div>
+                    <div class="bg-obsidian p-6 border border-obsidian-light text-center">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-trust mx-auto mb-2"></i>
+                        <p class="font-oswald uppercase tracking-widest text-white text-sm">Nocatee</p>
+                        <p class="text-steel/50 text-xs mt-1">~35 min south</p>
+                    </div>
+                    <div class="bg-obsidian p-6 border border-obsidian-light text-center">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-trust mx-auto mb-2"></i>
+                        <p class="font-oswald uppercase tracking-widest text-white text-sm">St. Augustine</p>
+                        <p class="text-steel/50 text-xs mt-1">~40 min south</p>
+                    </div>
+                    <div class="bg-obsidian p-6 border border-obsidian-light text-center">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-trust mx-auto mb-2"></i>
+                        <p class="font-oswald uppercase tracking-widest text-white text-sm">Nassau County</p>
+                        <p class="text-steel/50 text-xs mt-1">~30 min north</p>
+                    </div>
+                    <div class="bg-obsidian p-6 border border-obsidian-light text-center">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-trust mx-auto mb-2"></i>
+                        <p class="font-oswald uppercase tracking-widest text-white text-sm">Fernandina Beach</p>
+                        <p class="text-steel/50 text-xs mt-1">~45 min north</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community CTA -->
+        <section class="py-24 bg-obsidian relative border-t border-obsidian-light">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-widest mb-4 text-warm">Reach Out. No Judgment.</h2>
+                <p class="text-steel text-lg max-w-2xl mx-auto mb-6">We'll figure it out together. Fill out the form or call us directly.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button type="button" data-open-modal class="btn-rugged inline-flex items-center justify-center gap-3 bg-trust text-white font-oswald text-xl font-bold uppercase tracking-widest px-10 py-5 hover:bg-trust-dark focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-trust/50 transition-colors cursor-pointer">
+                        Send Us a Message <i data-lucide="arrow-right" class="w-6 h-6"></i>
+                    </button>
+                    <a href="tel:9044587561" class="inline-flex items-center justify-center gap-3 border-2 border-trust text-trust font-oswald text-xl font-bold uppercase tracking-widest px-10 py-5 hover:bg-trust hover:text-white transition-colors">
+                        <i data-lucide="phone" class="w-6 h-6"></i> (904) 458-7561
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
 </main>
 
 <!-- INTAKE FORM MODAL -->
@@ -583,7 +714,7 @@
         <div class="p-8 md:p-14">
             <div class="text-center mb-12">
                 <h2 id="modal-form-heading" class="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-widest mb-4 text-ranger">Let's Get to Work</h2>
-                <p class="text-steel text-lg max-w-2xl mx-auto">Take the first step toward a better relationship with your dog. Fill out the form below, and we'll reach out within 24 hours.</p>
+                <p class="text-steel text-lg max-w-2xl mx-auto">Whether it's training, a rescue adjustment, or a situation you're not sure how to handle — fill out the form and we'll reach out within 24 hours.</p>
             </div>
             <form id="intake-form" name="intake" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6" aria-label="Intake Form" novalidate>
                 <input type="hidden" name="form-name" value="intake">
@@ -610,6 +741,24 @@
                     <div class="space-y-2">
                         <label for="location" class="font-oswald uppercase text-sm tracking-widest text-steel block">Zip Code <span class="text-forge" aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
                         <input type="text" id="location" name="location" required inputmode="numeric" pattern="[0-9]{5}" maxlength="5" class="w-full bg-obsidian border border-obsidian-light px-5 py-4 text-white focus:outline-none focus:border-forge focus:ring-1 focus:ring-forge transition-colors rounded-none placeholder-steel/40" placeholder="Jacksonville Area">
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <label for="serviceType" class="font-oswald uppercase text-sm tracking-widest text-steel block">How Can We Help? <span class="text-forge" aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+                    <div class="relative">
+                        <select id="serviceType" name="serviceType" required class="w-full bg-obsidian border border-obsidian-light px-5 py-4 text-white focus:outline-none focus:border-forge focus:ring-1 focus:ring-forge transition-colors rounded-none appearance-none pr-12">
+                            <option value="" disabled selected>Select a service...</option>
+                            <option value="behavior">Behavior Modification</option>
+                            <option value="obedience">Advanced Obedience</option>
+                            <option value="puppy">New Puppy Training</option>
+                            <option value="rescue">Rescue / Adoption Adjustment (Free)</option>
+                            <option value="surrender-prevention">Surrender Prevention (Free)</option>
+                            <option value="other">Not Sure — I Just Need Help</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-steel" aria-hidden="true">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
                     </div>
                 </div>
 
@@ -650,8 +799,11 @@
             <span class="font-oswald text-xl font-bold tracking-widest text-steel uppercase">Axiom Canine</span>
         </div>
         <div class="text-center md:text-right">
-            <p class="text-steel text-sm uppercase tracking-widest font-bold mb-2">Serving Jacksonville, FL & Surrounding Areas</p>
-            <p class="text-steel/50 text-xs tracking-wider">Clear communication. Mutual respect.</p>
+            <p class="text-steel text-sm uppercase tracking-widest font-bold mb-2">Serving Jacksonville · Ponte Vedra · Nocatee · St. Augustine · Nassau County · Fernandina Beach</p>
+            <a href="tel:9044587561" class="flex items-center gap-2 text-steel hover:text-forge transition-colors text-sm uppercase tracking-widest font-bold justify-center md:justify-end mt-2">
+                <i data-lucide="phone" class="w-4 h-4"></i> (904) 458-7561
+            </a>
+            <p class="text-steel/50 text-xs tracking-wider mt-2">Clear communication. Mutual respect.</p>
         </div>
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 text-center border-t border-obsidian-light pt-8">
@@ -818,11 +970,12 @@
         }
     });
 
-    const pages = ['home', 'behavior', 'obedience'];
+    const pages = ['home', 'behavior', 'obedience', 'community'];
     const pageTitles = {
         'home':      'Axiom Canine | Expert Dog Training in Jacksonville, FL',
         'behavior':  'Behavior Modification | Axiom Canine Jacksonville',
-        'obedience': 'Advanced Obedience | Axiom Canine Jacksonville'
+        'obedience': 'Advanced Obedience | Axiom Canine Jacksonville',
+        'community': 'Axiom Cares | Free Services | Axiom Canine Jacksonville'
     };
 
     function handleRoute() {
@@ -840,20 +993,30 @@
 
         document.querySelectorAll('.nav-link').forEach(link => {
             const isActive = link.dataset.route === route;
+            const activeColor = link.dataset.activeColor || 'forge';
+            const inactiveColor = activeColor === 'trust' ? 'trust' : 'forge';
             link.classList.toggle('text-steel', !isActive);
             link.classList.toggle('border-transparent', !isActive);
-            link.classList.toggle('text-forge', isActive);
-            link.classList.toggle('border-forge', isActive);
+            link.classList.toggle(`text-${activeColor}`, isActive);
+            link.classList.toggle(`border-${activeColor}`, isActive);
+            if (!isActive) {
+                link.classList.remove(`text-${inactiveColor}`, `border-${inactiveColor}`);
+            }
             link.setAttribute('aria-current', isActive ? 'page' : 'false');
         });
 
         document.querySelectorAll('.mobile-nav-link').forEach(link => {
             const isActive = link.dataset.route === route;
+            const activeColor = link.dataset.activeColor || 'forge';
+            const inactiveColor = activeColor === 'trust' ? 'trust' : 'forge';
             link.classList.toggle('text-steel', !isActive);
             link.classList.toggle('border-l-transparent', !isActive);
-            link.classList.toggle('text-forge', isActive);
+            link.classList.toggle(`text-${activeColor}`, isActive);
+            link.classList.toggle(`border-l-${activeColor}`, isActive);
+            if (!isActive) {
+                link.classList.remove(`text-${inactiveColor}`, `border-l-${inactiveColor}`);
+            }
             link.classList.toggle('bg-obsidian-light', isActive);
-            link.classList.toggle('border-l-forge', isActive);
             link.setAttribute('aria-current', isActive ? 'page' : 'false');
         });
 
