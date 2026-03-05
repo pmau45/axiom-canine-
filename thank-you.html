@@ -27,6 +27,9 @@
                             dark: '#CC4B00'
                         },
                         steel: '#C5C6C7'
+                    },
+                    fontFamily: {
+                        oswald: ['Oswald', 'sans-serif']
                     }
                 }
             }
@@ -47,15 +50,15 @@
 </head>
 <body class="flex items-center justify-center min-h-screen text-center px-4">
     <div class="max-w-2xl">
-        <svg class="w-24 h-24 mx-auto mb-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-24 h-24 mx-auto mb-8 text-ranger" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>
-        <h1 class="text-5xl font-bold text-white mb-6" style="font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.1em;">Thank You!</h1>
-        <p class="text-xl mb-8" style="color: #C5C6C7; line-height: 1.6;">
+        <h1 class="text-5xl font-bold text-white mb-6 font-oswald uppercase tracking-[0.1em]">Thank You!</h1>
+        <p class="text-xl mb-8 text-steel leading-relaxed">
             Your information has been received successfully.<br/>
             We'll be reaching out to you within 24 hours.
         </p>
-        <a href="/Main" class="btn-forge inline-block text-white font-bold uppercase tracking-widest px-10 py-4 border-2" style="font-family: 'Oswald', sans-serif;">
+        <a href="/" class="btn-forge inline-block text-white font-bold uppercase tracking-widest px-10 py-4 border-2 font-oswald">
             Return to Home
         </a>
     </div>
