@@ -496,7 +496,9 @@
 
 <!-- SPA ROUTING & INTERACTIVITY SCRIPT -->
 <script>
-    if (typeof lucide !== 'undefined') lucide.createIcons();
+    document.addEventListener('DOMContentLoaded', () => {
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    });
     document.getElementById('year').textContent = new Date().getFullYear();
 
     const menuBtn    = document.getElementById('mobile-menu-btn');
