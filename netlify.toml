@@ -3,8 +3,8 @@
   publish = "."
   
 [[redirects]]
-  # Allow the thank-you page to be served directly
-  from = "/thank-you.html"
+  # Redirect /thank-you (no extension) to the thank-you page (used by form action)
+  from = "/thank-you"
   to = "/thank-you.html"
   status = 200
 

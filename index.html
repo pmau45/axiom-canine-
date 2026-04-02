@@ -79,12 +79,17 @@
     <!-- ICONS -->
     <script src="https://unpkg.com/lucide@latest" defer></script>
 
-    <!-- ADVANCED SCHEMA.ORG FOR MULTI-SERVICE LOCAL SEO -->
+    <!-- LOCAL BUSINESS SCHEMA -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Axiom Canine",
+      "description": "Expert dog training in Jacksonville, FL — behavior modification, reactivity, aggression, advanced obedience & free assessments. Structure, consistency, results.",
+      "url": "https://axiom-canine.netlify.app",
+      "telephone": "(904) 458-7561",
+      "image": "https://axiom-canine.netlify.app/og-image.jpg",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Jacksonville",
@@ -96,7 +101,15 @@
         "latitude": 30.3321838,
         "longitude": -81.6556509
       },
-      "description": "Expert dog training in Jacksonville, FL specializing in structural consistency and clear communication.",
+      "areaServed": [
+        {"@type": "City", "name": "Jacksonville"},
+        {"@type": "City", "name": "Ponte Vedra"},
+        {"@type": "City", "name": "Nocatee"},
+        {"@type": "City", "name": "St. Augustine"},
+        {"@type": "City", "name": "Nassau County"},
+        {"@type": "City", "name": "Fernandina Beach"}
+      ],
+      "serviceType": ["Dog Training", "Leash Reactivity", "Aggression Training", "Obedience Training"],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Dog Training Services",
@@ -118,7 +131,8 @@
             }
           }
         ]
-      }
+      },
+      "sameAs": []
     }
     </script>
 
@@ -163,40 +177,6 @@
             .hero-headline { font-size: 2.75rem; line-height: 0.95; }
         }
     </style>
-    <!-- LOCAL BUSINESS SCHEMA -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Axiom Canine",
-      "description": "Expert dog training in Jacksonville, FL — reactivity, aggression & obedience | Axiom Canine",
-      "url": "https://axiom-canine.netlify.app",
-      "telephone": "(904) 458-7561",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Jacksonville",
-        "addressRegion": "FL",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 30.3322,
-        "longitude": -81.6557
-      },
-      "areaServed": [
-        {"@type": "City", "name": "Jacksonville"},
-        {"@type": "City", "name": "Ponte Vedra"},
-        {"@type": "City", "name": "Nocatee"},
-        {"@type": "City", "name": "St. Augustine"},
-        {"@type": "City", "name": "Nassau County"},
-        {"@type": "City", "name": "Fernandina Beach"}
-      ],
-      "serviceType": ["Dog Training", "Leash Reactivity", "Aggression Training", "Obedience Training"],
-      "priceRange": "$$",
-      "image": "https://axiom-canine.netlify.app/og-image.jpg",
-      "sameAs": []
-    }
-    </script>
 </head>
 
 <body class="text-steel font-chivo selection:bg-forge selection:text-obsidian-dark antialiased overflow-x-hidden">
