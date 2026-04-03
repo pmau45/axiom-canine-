@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /thank-you.html
 
-Sitemap: https://axiom-canine.netlify.app/sitemap.xml
+Sitemap: https://axiomcanine.dev/sitemap.xml
