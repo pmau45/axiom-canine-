@@ -1,0 +1,23 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+.sublime-text/
+*.swp
+*.swo
+
+# Node modules (if needed in future)
+node_modules/
+
+# Build artifacts
+dist/
+build/
+.cache/
+
+# Environment files
+.env
+.env.local
+.env.*.local

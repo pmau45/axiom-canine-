@@ -23,7 +23,7 @@ A professional website for Axiom Canine, a dog training business in Jacksonville
    - Click "Add new site" → "Import an existing project"
    - Choose "GitHub" as your Git provider
    - Authorize Netlify to access your GitHub account
-   - Select the `pmau45/automatic-fishstick` repository
+   - Select the `pmau45/axiom-canine-` repository
 
 2. **Configure Build Settings**
    - Netlify will auto-detect the `netlify.toml` configuration file
@@ -42,7 +42,7 @@ A professional website for Axiom Canine, a dog training business in Jacksonville
 
 ## Local Development
 
-Simply open the `Main` file in a web browser. No build process required.
+Simply open the `index.html` file in a web browser. No build process required.
 
 ## Form Submissions
 
@@ -55,7 +55,7 @@ You can also set up email notifications for new submissions in the Netlify dashb
 
 ## Structure
 
-- `Main` - Main HTML file with all content
+- `index.html` - Main HTML file with all content
 - `netlify.toml` - Netlify configuration
 - `thank-you.html` - Form submission confirmation page
 
